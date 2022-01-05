@@ -1,9 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  background-color: lightblue;
+  font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.wrapper {
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  h3, p {
+    margin: 0;
+  }
+  img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+}
+
+.headerRight{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+li, img {
+  margin: 10px;
+}
+  img{
+    height: 30px;
+    width: 30px;
+  }
+}

@@ -1,38 +1,82 @@
-.App {
+
+body {
+background-image: url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
+}
+.wrapper {
+  font-family: 'Shizuru', cursive;
   text-align: center;
+  background-color: whitesmoke;
+  opacity: 0.9;
+  min-height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  font-family: 'Shizuru', cursive;
+  font-size: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  border: 1px  solid orange;
+  animation: logo 20s infinite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes logo {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+}
+
+.header-right {
+  background-color: white;
+}
+
+.underLine {
+  border-bottom: 1px solid black;
+}
+
+.drawerBtn {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.drawerBtn:hover {
+  transform: scale(1.1);
+}
+
+.inputSearch {
+  width: 160px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 19px;
+  background-color: white;
+  background-position: 1px 1px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+  opacity: 0.5;
+  position: relative;
+}
+
+.inputSearch:focus {
+  width: 50%;
+  opacity: 1;
+}
+.deleteInputText {
+  right: 36%;
+  position: absolute;
+  height: 20px;
+  width: 20px;
 }
